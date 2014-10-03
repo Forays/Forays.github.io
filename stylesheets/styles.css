@@ -793,8 +793,8 @@ section #title {
   padding: 0 0 5px 0;
 }
 section #title img {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 480px;
+  max-height: 480px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -837,18 +837,19 @@ section #footer .credits.right {
   float: right;
 }
 
-@media print, screen and (max-width: 720px) {
-  #title .credits {
+@media print, screen and (max-width: 720px)
+{
+  #footer .credits {
     display: block;
     width: 100%;
     line-height: 30px;
     text-align: center;
   }
-  #title .credits .left {
+  #footer .credits .left {
     float: none;
     display: block;
   }
-  #title .credits .right {
+  #footer .credits .right {
     float: none;
     display: block;
   }
@@ -864,5 +865,13 @@ section #footer .credits.right {
 
   nav {
     display: none;
+  }
+  
+  section #title img {
+    max-width: 240px;
+    max-height: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
